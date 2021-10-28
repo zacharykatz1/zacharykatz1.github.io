@@ -60,3 +60,14 @@ nyc_airbnb %>%
   plot_ly(x = ~neighbourhood, y = ~n, color = ~neighbourhood, type = "bar", colors = "viridis")
 ```
 
+## ggplotly
+
+```{r}
+gg_lat_long = 
+nyc_airbnb %>% 
+      ggplot(aes(x = lat, y = long, color = price)) + 
+      geom_point()
+
+ggplotly(gg_lat_long)
+```
+
