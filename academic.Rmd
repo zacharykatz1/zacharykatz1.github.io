@@ -1,0 +1,69 @@
+---
+title: "Education"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+
+
+## Academic Experience
+
+#### Graduate
+
+- __Institution:__ Columbia University
+- __Years Attended:__ 2021 to 2023 (expected)
+- __Degree:__ Master of Science
+- __Major:__ Biostatistics (Theory & Methods track)
+- __Minor:__ N/A
+- __Accomplishments:__ Recipient of Public Health Leadership Scholarship. Member of Dr. Shuang Wang’s precision medicine working group, with a focus on machine learning, including integration of high-
+dimensional multi-omics data, disease subtyping, and biomarker prediction.
+
+####
+
+- __Institution:__ University of Cambridge
+- __Years Attended:__ 2010 to 2011
+- __Degree:__ Master of Philisophy with Distinction
+- __Major:__ Bioscience Enterprise (Dept. of Biotechnology & Judge Business School)
+- __Minor:__ N/A
+- __Accomplishments:__ Graduated 1st in class. Recipient of Cambridge Overseas Scholarship (top overseas applicant) and St. John’s College Scholarship (top academic performance). Awarded Stanford Graduate Fellowship and James B. Duke University Fellowships for PhD in Bioengineering (declined).
+
+#### Undergraduate 
+
+- __Institution:__ Harvard College
+- __Years Attended:__ 2006 to 2010
+- __Degree:__ Bachelor of Arts, Summa Cum Laude
+- __Major:__ History and Science, Science and Society (Biochemistry track)
+- __Minor:__ English and American Literature
+- __Accomplishments:__ John Harvard Scholarship (top 5% of class), New York State Scholarship, & Harvard Faculty Scholarship. Nominated for Rhodes Scholarship. Co-Founder of the Harvard Undergraduate Research Association and President of The Triple Helix Publication for Science, Law, and Society. Studied Economics & English at Oxford University (1st Class Honours).
+
+## Research Experience
+
+#### 
+
+- __Institution:__ Miami Children's Hospital (Dube lab)
+- __Years:__ 2003
+- __Project:__ Understanding the impact of antioxidant use on bone density
+
+<hr />
+
+- __Institution:__ Columbia University Institute for Cancer Genetics (Tycko lab)
+- __Years:__ 2004 to 2005
+- __Project:__ Assessing SNP loss of heterozygosity in Wilms' Tumor patients to profile the tumor-suppressor role of TTK Protein Kinase on C6Q
+
+<hr />
+
+- __Institution:__ SUNY Stony Brook Center for Molecular Medicine (Gergen lab)
+- __Years:__ 2005 to 2006 (Simons Summer Research Fellow)
+- __Project:__ Characterizing the Odd Oz gene in *D. melanogaster* embryonic stem cells, with analogous treatment development based on homologous AML1 protein in humans (a key driver of leukemia)
+
+<hr />
+
+- __Institution:__ Harvard University FAS Center for Systems Biology (Benenson lab)
+- __Years:__ 2007 to 2010 (Harvard College Research Fellow)
+- __Project:__ Developing a logic system that uses synthetic microRNAs as mediators to detect cellular inputs (endogenous transcription factors)
+
+
+
+

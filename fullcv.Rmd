@@ -1,0 +1,13 @@
+---
+title: "Full CV"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+Please feel free to <a href="zacharykatz1.github.io/pdf_documents/resume_10302021.pdf" target="_blank">download</a> my latest CV as of October 30, 2021, or [email me](mailto: zacharykatz1@gmail.com) if you'd like a more updated version. 
+
+<iframe src="pdf_documents/resume_10302021.pdf" width="100%" height="1000px">
+
+

@@ -1,0 +1,107 @@
+---
+title: "Professional Experience"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+
+
+## Healthcare
+
+#### Full-Time Roles
+
+- __Institution:__ Burrill & Company
+- __Years:__ 2013
+- __Position:__ Venture Capital Analyst Fellow
+
+|        __Description:__ 
+
+* Evaluated life sciences investment opportunities by maintaining new and ongoing deal flow logs and assisting with due diligence on new opportunities, including Genia (acquired by Roche for $350M)  
+
+<br />
+
+- __Institution:__ Genentech Inc.
+- __Years:__ 2011 to 2013
+- __Position:__ Manager, Pipeline & Portfolio Planning
+
+|        __Description:__ 
+
+* Generated novel cross-portfolio analyses to inform clinical and commercial decision-making across therapeutic areas, including indication
+prioritization, and led strategic planning for molecule teams in oncology, immunology, ophthalmology, and infectious diseases – primary
+lead for asthma, ocular disorders, and hepatitis C franchises – as a liaison between project teams and portfolio decision-making committees
+* Developed frameworks and tactics for brand planning in HER2 oncology marketing commercial organization to improve patient targeting
+and minimize cannibalization for competing breast cancer products
+* Guided senior executives on corporate pipeline presentations for Board strategy days, investor events, and R&D Steering Committees  
+
+
+#### Internship Roles
+
+- __Institution:__ Diagnostics for All
+- __Years:__ Summer 2010
+- __Department:__ Business Development and Partnering
+
+<hr />
+
+- __Institution:__ JP Morgan Chase & Co.
+- __Years:__ Summer 2010
+- __Department:__ Healthcare & Technology M&A Investment Banking
+
+<hr />
+
+- __Institution:__ Booz Allen Hamilton
+- __Years:__ Summer 2009
+- __Department:__ Healthcare & Research Consulting
+
+<hr />
+
+- __Institution:__ OSI Pharmaceuticals
+- __Years:__ Summer 2008
+- __Department:__ Corporate (Business) Development
+
+<br />
+
+## Technology
+
+#### Full-Time Roles
+
+- __Institution:__ Recidiviz
+- __Years:__ 2020 to 2021
+- __Position:__ Senior State Engagement Manager
+
+|        __Description:__ 
+
+* Served as first hire on State Engagement team, scaling from one employee covering one state to a team of six covering 15+ states
+* Generated with Dr. Gregg Gonsalves (Yale) and a team of epidemiologists and data scientists the first COVID-19 modeling tool for prison and jail parameters to help corrections administrators and government officials forecast viral impact and assess mitigation options
+* Scoped, synthesized, and presented data-driven analyses on correctional interventions and outcomes to help state governments develop policies maximizing sustainable decarceration, requiring proficiency with causal inference (difference-in-differences, instrumental variables, synthetic controls), experimental design (A/B tests, power calculations, treatment assignment), machine learning (clustering, feature selection, random forests), and statistics (hypothesis tests, multivariate regression, time series) using R, Python, and SQL
+* Provided technical, client services leadership for all products: tools for correctional leadership and staff, as well as custom policy models and impact reports evaluating prison population growth and recidivism drivers for state legislatures and other agencies  
+
+<br />
+
+- __Institution:__ Scentbird
+- __Years:__ 2017
+- __Position:__ Director of Customer Analytics & Experience
+
+|        __Description:__ 
+
+* Scaled customer base from 10K to 250K subscribers by implementing digital analytic tools to establish and monitor KPIs, extracting
+business insights from customer database to build prediction models for monthly churn, and conducting user experience analysis to
+inform product development, leading to a 74% increase in customer retention and a 50% increase in customer lifetime value
+* Developed financial models, created fundraising presentations for venture investment, and worked with executive team in strategic
+prioritization of market segment expansion and go-to-market strategy, resulting in a $19M Series A round
+* Co-managed cross-functional teams of up to ten engineers, designers, marketers, and other internal leaders to launch product iterations  
+
+
+<br />
+
+- __Institution:__ Oliver Online Inc.
+- __Years:__ 2016 to 2017
+- __Position:__ Chief Strategy Officer
+
+|        __Description:__ 
+
+* Optimized monetization strategy with financial models for competing business plans, leading to pivot from B2C towards B2B SaaS
+* Generated new business development affiliate/brand partnerships and negotiated contracts with established on-demand services
+* Led post-seed investment with venture presentations, historical growth analysis, and technical development and go-to-market roadmaps
+
