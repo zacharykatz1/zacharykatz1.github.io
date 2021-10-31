@@ -1,22 +1,47 @@
 ---
-title: "My awesome website"
+title: "Zachary Katz"
 output: 
   html_document:
     toc: true
     toc_float: true
 ---
 
-# This is Zak's awesome website
+**1st year Biostatistics M.S. candidate at Columbia University's Mailman School of Public Health**
 
-![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
+<hr />
 
-I can link to useful things like [google](https://www.google.com/) and [p8105](https://www.p8105.com/making_websites.html).
+<img src="images/my_picture.jpeg" style = "width:25%">
 
-I can make an extra page on my site and link to that. Here's my [about](about.html) page.
+# High-Level Overview 
+## (AKA tl;dr)
 
 
-## Here's Ted
+Experienced life sciences professional with a nimble, data-driven tech startup mindset and expertise in portfolio optimization, clinical development, and go-to-market strategy to maximize ROI. Substantial statistical and computational experience synthesizing business insights, with a track record of scaling organizations through empathic people management and tactical partnerships.
 
-My cat's name is Ted. He likes to be on the internet. Here he is:
+Check out my [educational experience](academic.html), [professional experience](professional.html), or [full CV](fullcv.html)!
 
-<img src="images/cat.jpeg" style = "width:75%">
+<hr />
+
+# About Me
+
+Born and raised in the New York City area, I'm thrilled to be back in my hometown studying for my **Master of Science in Biostatistics (Theory & Methods track) at [Columbia University](https://www.publichealth.columbia.edu/academics/departments/biostatistics)**. 
+
+Healthcare has interested me since I was a teenager; when I was 13, I volunteered at Miami Children's Hospital and took a genetics course through Johns Hopkins University. Instantly, I was awestruck by what I saw, even then, as the potential for **precision medicine**. My education and career since then have been geared towards turning that vision into a reality: first as a **Harvard** undergraduate, then during my first Master's degree at the **University of Cambridge**, where I studied in a [joint program](https://www.ceb.cam.ac.uk/postgraduates-tab/mphil-mbe) between the Department of Biotechnology and Judge Business School.
+
+My career is broadly divided into two parts: the first in drug development and life sciences, and the second in the technology space. I've been privileged to work for companies ranging from **[Genentech](https://www.gene.com/) (portfolio strategy) to [JP Morgan](https://www.jpmorgan.com/global) (healthcare investment banking) to [Scentbird](https://www.scentbird.com/) (customer analytics)**. Most recently, I was the first non-engineer hire at [Recidiviz](https://www.recidiviz.org/), a tech nonprofit founded by ex-Googlers focused on improving outcomes for justice-involved individuals to minimize the footprint of our justice system. I'm still lucky to contribute there part-time.
+
+Outside of school, you can usually find me:
+
+* Reading and [writing](https://www.amazon.com/Zachary-Katz/e/B00JW6TQP8/ref=dp_byline_cont_pop_book_1) creatively (I'm hard at work on a novel)
+* Acquainting myself with machine learning / artificial intelligence techniques (typically through [DataCamp](https://www.datacamp.com/tracks/machine-learning-scientist-with-python))
+* Practicing the cello and piano (I've served as Principal Cellist of the Cambridge University Symphony Orchestra, Oxford University Orchestra, and [Mozart Society Orchestra](https://mozartsocietyorchestra.com/) at Harvard)
+* Volunteering for LGBT causes, most recently with the [SF LGBT Center](https://www.sfcenter.org/)
+* Checking out the latest and greatest ethnic cuisine that New York has to offer with my husband, Nathaniel
+
+<br />
+
+# Want to learn more?
+
+If this resonates with you, go ahead and [email me](mailto: zacharykatz1@gmail.com) for a coffee chat!
+
+

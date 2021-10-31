@@ -20,7 +20,7 @@ output:
 
 * Evaluated life sciences investment opportunities by maintaining new and ongoing deal flow logs and assisting with due diligence on new opportunities, including Genia (acquired by Roche for $350M)  
 
-<br />
+<hr />
 
 - __Institution:__ Genentech Inc.
 - __Years:__ 2011 to 2013
@@ -35,6 +35,7 @@ lead for asthma, ocular disorders, and hepatitis C franchises – as a liaison b
 and minimize cannibalization for competing breast cancer products
 * Guided senior executives on corporate pipeline presentations for Board strategy days, investor events, and R&D Steering Committees  
 
+<br />
 
 #### Internship Roles
 
@@ -77,7 +78,7 @@ and minimize cannibalization for competing breast cancer products
 * Scoped, synthesized, and presented data-driven analyses on correctional interventions and outcomes to help state governments develop policies maximizing sustainable decarceration, requiring proficiency with causal inference (difference-in-differences, instrumental variables, synthetic controls), experimental design (A/B tests, power calculations, treatment assignment), machine learning (clustering, feature selection, random forests), and statistics (hypothesis tests, multivariate regression, time series) using R, Python, and SQL
 * Provided technical, client services leadership for all products: tools for correctional leadership and staff, as well as custom policy models and impact reports evaluating prison population growth and recidivism drivers for state legislatures and other agencies  
 
-<br />
+<hr />
 
 - __Institution:__ Scentbird
 - __Years:__ 2017
@@ -93,7 +94,7 @@ prioritization of market segment expansion and go-to-market strategy, resulting 
 * Co-managed cross-functional teams of up to ten engineers, designers, marketers, and other internal leaders to launch product iterations  
 
 
-<br />
+<hr />
 
 - __Institution:__ Oliver Online Inc.
 - __Years:__ 2016 to 2017

@@ -20,7 +20,7 @@ output:
 - __Accomplishments:__ Recipient of Public Health Leadership Scholarship. Member of Dr. Shuang Wang’s precision medicine working group, with a focus on machine learning, including integration of high-
 dimensional multi-omics data, disease subtyping, and biomarker prediction.
 
-####
+<hr />
 
 - __Institution:__ University of Cambridge
 - __Years Attended:__ 2010 to 2011
@@ -28,6 +28,8 @@ dimensional multi-omics data, disease subtyping, and biomarker prediction.
 - __Major:__ Bioscience Enterprise (Dept. of Biotechnology & Judge Business School)
 - __Minor:__ N/A
 - __Accomplishments:__ Graduated 1st in class. Recipient of Cambridge Overseas Scholarship (top overseas applicant) and St. John’s College Scholarship (top academic performance). Awarded Stanford Graduate Fellowship and James B. Duke University Fellowships for PhD in Bioengineering (declined).
+
+<br />
 
 #### Undergraduate 
 
@@ -37,6 +39,8 @@ dimensional multi-omics data, disease subtyping, and biomarker prediction.
 - __Major:__ History and Science, Science and Society (Biochemistry track)
 - __Minor:__ English and American Literature
 - __Accomplishments:__ John Harvard Scholarship (top 5% of class), New York State Scholarship, & Harvard Faculty Scholarship. Nominated for Rhodes Scholarship. Co-Founder of the Harvard Undergraduate Research Association and President of The Triple Helix Publication for Science, Law, and Society. Studied Economics & English at Oxford University (1st Class Honours).
+
+<br />
 
 ## Research Experience
 
