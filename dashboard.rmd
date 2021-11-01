@@ -100,13 +100,9 @@ restaurant_sample %>%
     total_grades = sum(num_per_grade_boro),
     grade_freq = num_per_grade_boro * 100 / total_grades
   ) %>% 
-  mutate(
-    text_label = str_c("\nNumber of Inspections: ", total_grades)
-  ) %>% 
   # Plot stacked bar graph
   plot_ly(x = ~boro, y = ~grade_freq, 
-          color = ~grade, type = "bar", colors = "viridis",
-          text = ~text_label) %>% 
+          color = ~grade, type = "bar", colors = "viridis") %>% 
   layout(barmode = "stack") %>% 
   layout(
     title = "Frequency of Inspections by Score in Each Borough",
