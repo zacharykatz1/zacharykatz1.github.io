@@ -57,6 +57,9 @@ Column {data-width=650}
 ```{r first plot}
 # Build a lineplot showing how the average inspection score has changed over time split by borough
 restaurant_sample %>% 
+  mutate(
+    inspection_year = as.factor(inspection_year)
+  ) %>% 
   # Group by borough and year
   group_by(boro, inspection_year) %>% 
   # Find mean per borough/year
@@ -67,7 +70,7 @@ restaurant_sample %>%
   filter(!boro == "Missing") %>% 
   # Generate lineplot
   plot_ly(x = ~inspection_year, y = ~mean_score,
-          color = ~boro, type = "scatter", mode = "lines", colors = "viridis") %>% 
+          color = ~boro, type = "scatter", mode = "lines+markers", colors = "viridis") %>% 
   layout(
     title = "Mean Inspection Score Over Time Per Borough",
     xaxis = list(title = "Inspection Year"),

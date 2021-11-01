@@ -3,8 +3,10 @@ output_dir: "."
 navbar:
   title: "Home"
   right:
-    - text: "Dashboard"
-      href: dashboard.html
+    - text: "Sample Work"
+      menu:
+        - text: "P8105 HW #4"
+          href: dashboard.html
     - text: "Experience"
       menu:
         - text: Educational
