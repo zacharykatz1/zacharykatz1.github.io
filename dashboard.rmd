@@ -1,66 +1,135 @@
 ---
-title: "Dashboard"
+title: "NYC Restaurant Inspections"
+subtitle: "Analyses on a subset of restaurants"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
     vertical_layout: fill
     source_code: embed
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r setup, include=FALSE}
+# Load packages for data and analysis
 library(flexdashboard)
 library(tidyverse)
 library(p8105.datasets)
 library(plotly)
-```
+library(lubridate)
 
-```{r}
-data(nyc_airbnb)
+# Load Instacart data
+data("rest_inspec")
 
-nyc_airbnb = 
-  nyc_airbnb %>% 
-  mutate(rating = review_scores_location / 2) %>%
-  select(
-    neighbourhood_group, neighbourhood, rating, price, room_type, lat, long) %>%
-  filter(
-    !is.na(rating), 
-    neighbourhood_group == "Manhattan",
-    room_type == "Entire home/apt",
-    price %in% 100:500)
+# Clean and sample restaurant inspections data
+restaurant_sample = rest_inspec %>% 
+  # Subset the data to a smaller sample by filtering for Asian cuisines
+  filter(cuisine_description %in% c("Thai", "Chinese", "Indian", "Korean", "Japanese")) %>% 
+  # Eliminate unnecessary columns %>% 
+  select(dba, cuisine_description, boro, critical_flag, inspection_date, score, grade, street) %>% 
+  # Rename columns
+  rename(
+    cuisine = cuisine_description,
+    name = dba
+  ) %>% 
+  # Scores should not be less than 0
+  filter(score > 0) %>% 
+  # Drop NAs
+  drop_na() %>% 
+  # Parse inspection dates
+  mutate(
+    inspection_date = as.POSIXct(inspection_date, format = "%Y-%m-%d")
+  ) %>% 
+  mutate(
+    inspection_month = month(inspection_date),
+    inspection_year = year(inspection_date),
+    inspection_month = month.abb[inspection_month]
+  ) %>% 
+  select(-inspection_date)
+
 ```
 
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### Chart A
+### Average inspection score over time by borough
 
-```{r}
-nyc_airbnb %>%
-  mutate(text_label = str_c("Price: $", price, "\nRating: ", rating)) %>% 
-  plot_ly(
-    x = ~lat, y = ~long, type = "scatter", mode = "markers",
-    color = ~price, text = ~text_label, alpha = 0.5)
+```{r first plot}
+# Build a lineplot showing how the average inspection score has changed over time split by borough
+restaurant_sample %>% 
+  # Group by borough and year
+  group_by(boro, inspection_year) %>% 
+  # Find mean per borough/year
+  summarize(
+    mean_score = mean(score)
+  ) %>% 
+  # Filter out when borough is missing
+  filter(!boro == "Missing") %>% 
+  # Generate lineplot
+  plot_ly(x = ~inspection_year, y = ~mean_score,
+          color = ~boro, type = "scatter", mode = "lines", colors = "viridis") %>% 
+  layout(
+    title = "Mean Inspection Score Over Time Per Borough",
+    xaxis = list(title = "Inspection Year"),
+    yaxis = list(title = "Average Score")
+  )
 ```
 
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### Chart B
+### Number of restaurants per inspection grade in each borough
 
 ```{r}
-nyc_airbnb %>% 
-      mutate(
-            neighbourhood = fct_reorder(neighbourhood, price)
-            ) %>% 
-      plot_ly(y = ~price, color = ~neighbourhood, type = "box", colors = "viridis")
+# Build a bar plot for frequency of each grade per borough
+restaurant_sample %>% 
+  # Filter only for A's, B's, and C's
+  filter(!(grade %in% c("Not Yet Graded", "P", "Z"))) %>% 
+  # Find how many inspections (denominators)
+  group_by(boro, grade) %>% 
+  filter(!boro == "Missing") %>% 
+  summarize(
+    num_per_grade_boro = n()
+  ) %>% 
+  group_by(boro) %>% 
+  # Find grade frequencies (numerators)
+  mutate(
+    total_grades = sum(num_per_grade_boro),
+    grade_freq = num_per_grade_boro * 100 / total_grades
+  ) %>% 
+  mutate(
+    text_label = str_c("\nNumber of Inspections: ", total_grades)
+  ) %>% 
+  # Plot stacked bar graph
+  plot_ly(x = ~boro, y = ~grade_freq, 
+          color = ~grade, type = "bar", colors = "viridis",
+          text = ~text_label) %>% 
+  layout(barmode = "stack") %>% 
+  layout(
+    title = "Frequency of Inspections by Score in Each Borough",
+    xaxis = list(title = "Borough"),
+    yaxis = list(title = "% Per Score Category")
+  )
 ```
 
-### Chart C
+### Score distribution by cuisine
 
 ```{r}
-nyc_airbnb %>% 
-  count(neighbourhood) %>% 
-  mutate(neighbourhood = fct_reorder(neighbourhood, n)) %>% 
-  plot_ly(x = ~neighbourhood, y = ~n, color = ~neighbourhood, type = "bar", colors = "viridis")
+# Generate boxplot for score distribution by cuisine
+restaurant_sample %>% 
+  # Reorder based on median score per cuisine
+  mutate(
+    cuisine = fct_reorder(cuisine, score)
+  ) %>% 
+  # Generate horizontal boxplot
+  plot_ly(y = ~cuisine, x = ~score, color = ~cuisine,
+          type = "box", colors = "viridis") %>% 
+  layout(
+    title = "Inspection Score Distribution Per Cuisine Across NYC Boroughs",
+    xaxis = list(title = "Cuisine"),
+    yaxis = list(title = "Inspection Score")
+  ) %>% 
+  # Hide legend
+  layout(showlegend = FALSE)
 ```
 
