@@ -1,6 +1,5 @@
 ---
-title: "NYC Restaurant Inspections"
-subtitle: "Analyses on a subset of restaurants"
+title: "NYC Restaurant Inspections Dashboard: Analyses on a Subset of Asian Restaurants (Thai, Chinese, Indian, Korean, & Japanese)"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
