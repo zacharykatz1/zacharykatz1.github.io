@@ -54,7 +54,7 @@ Column {data-width=650}
 
 ### Average inspection score over time by borough
 
-```{r first plot}
+```{r first plot (line plot, average score over time by borough)}
 # Build a lineplot showing how the average inspection score has changed over time split by borough
 restaurant_sample %>% 
   mutate(
@@ -72,7 +72,7 @@ restaurant_sample %>%
   plot_ly(x = ~inspection_year, y = ~mean_score,
           color = ~boro, type = "scatter", mode = "lines+markers", colors = "viridis") %>% 
   layout(
-    title = "Mean Inspection Score Over Time Per Borough",
+    title = "Mean Inspection Score Over Time By Borough",
     xaxis = list(title = "Inspection Year"),
     yaxis = list(title = "Average Score")
   )
@@ -83,7 +83,7 @@ Column {data-width=350}
 
 ### Number of restaurants per inspection grade in each borough
 
-```{r}
+```{r second plot (bar plot, grade frequency per borough)}
 # Build a bar plot for frequency of each grade per borough
 restaurant_sample %>% 
   # Filter only for A's, B's, and C's
@@ -105,7 +105,7 @@ restaurant_sample %>%
           color = ~grade, type = "bar", colors = "viridis") %>% 
   layout(barmode = "stack") %>% 
   layout(
-    title = "Frequency of Inspections by Score in Each Borough",
+    title = "Frequency of Inspection Grade By Borough",
     xaxis = list(title = "Borough"),
     yaxis = list(title = "% Per Score Category")
   )
@@ -113,7 +113,7 @@ restaurant_sample %>%
 
 ### Score distribution by cuisine
 
-```{r}
+```{r third plot (boxplot, score by cuisine)}
 # Generate boxplot for score distribution by cuisine
 restaurant_sample %>% 
   # Reorder based on median score per cuisine
